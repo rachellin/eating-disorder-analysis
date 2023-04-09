@@ -12,8 +12,8 @@ client = pytumblr.TumblrRestClient(
 
 now = int(datetime.now().timestamp())
 #print(now)
-posts = client.tagged("thinspo", before=now)
-pprint(posts)
+posts = client.tagged("userkaznej", limit=1, before=now)
+pprint(posts[0])
 
 # Make the request
 #client.info()
